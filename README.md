@@ -8,8 +8,8 @@
 
 - 🕹️ **Dynamic Gameplay**: Control a war tank and evade incoming missiles with smooth touch controls.
 - 🎯 **Challenging Mechanics**: Increasing difficulty keeps players engaged and tests their quick thinking.
-- 🏆 **Scoring System**: Tracks survival time for competitive scoring.
-- 📈 **High Score Tracking**: Encourages players to beat their best scores and dominate the leaderboard.
+- 🏆 **Scoring System**: Tracks survival time for scoring.
+- 📈 **Local High Score Tracking**: Persists your best survival score on the device and encourages you to beat your personal best.
 - 💡 **Intuitive Design**: User-friendly interface for easy navigation and an engaging experience.
 
 ---
@@ -48,7 +48,7 @@ Upon launching the game, players are welcomed with a sleek **Main Menu** featuri
   
 - **High Score**:
   - Keep track of your personal best score.
-  - Challenge yourself to beat your own record and climb higher on the leaderboard.
+  - Challenge yourself to beat your own record and improve your high score.
 
 ![High Score](https://github.com/dilrukshax/War_Tank/assets/100220079/92520091-2cc9-4d4b-aee4-cb04c49ac217)
 
@@ -91,23 +91,64 @@ Upon launching the game, players are welcomed with a sleek **Main Menu** featuri
 
 ## 🤝 Contributions
 
-We welcome contributions to enhance the game mechanics, optimize performance, or fix bugs. Follow these steps to contribute:
+This is a personal portfolio project and is not accepting external contributions.
 
-1. **Fork this repository.**
-2. **Create a new branch** for your changes:
+---
+
+## 📦 Getting Started
+
+1. Clone the repository:
+
    ```bash
-   git checkout -b feature-name
-   ```
-3. **Make your changes** and commit:
-   ```bash
-   git commit -m "Description of changes"
-   ```
-4. **Push your branch** and submit a pull request:
-   ```bash
-   git push origin feature-name
+   git clone https://github.com/dilrukshax/War_Tank
+   cd War_Tank
    ```
 
-For more information, check the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+2. Open the project in Android Studio (File → Open → select the project root) and let Gradle sync.
+
+3. Build and run on an emulator or physical device:
+
+   ```bash
+   ./gradlew assembleDebug
+   ./gradlew installDebug     # device/emulator must be connected
+   ```
+
+---
+
+## 🧪 Testing
+
+Only the Android Studio template test stubs (`ExampleUnitTest.kt`, `ExampleInstrumentedTest.kt`) are present; there are no project-specific tests. Tests were not executed as part of this documentation update.
+
+```bash
+./gradlew test               # unit tests
+./gradlew connectedCheck     # instrumented tests (needs device/emulator)
+```
+
+---
+
+## 🛠️ Build Requirements
+
+- Android Studio
+- Android SDK 34 (build tools)
+- An emulator or physical device running Android `minSdk` 24 (Android 7.0) or newer
+- Kotlin 1.9.22, AGP 8.2.2 (declared in `build.gradle.kts`)
+- Dependencies: AndroidX core-ktx, appcompat, Material, ConstraintLayout; JUnit 4 and Espresso (test)
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## ✍️ Author
+
+Dilan Dilruksha  
+Software Engineer | Backend & Full-Stack Development  
+Portfolio: https://dilandilruksha.dev  
+LinkedIn: https://www.linkedin.com/in/dilan-dilruksha  
+GitHub: https://github.com/dilrukshax
 
 ---
 
